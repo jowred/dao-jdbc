@@ -34,6 +34,18 @@ public class Program {
 		Seller s = new Seller(null, "Terry Bogard", "terry.bogard@gmail.com", new Date(), 4000.0, dep);
 		sellerDAO.insert(s);
 		System.out.println("Inserido. Novo ID = " + s.getId());
+		System.out.println();
+		
+		System.out.println("---- Seller update ----");
+		s = sellerDAO.findById(1);
+		s.setName("Lois Griffin");
+		s.setEmail("lois.griffin@gmail.com");
+		s.setSalary(5025.0);
+		sellerDAO.update(s);
+		System.out.println("Atualização realizada.");
+		System.out.println();
+		
+		
 	}
 
 }
