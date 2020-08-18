@@ -45,6 +45,10 @@ public class Program {
 		System.out.println("Atualização realizada.");
 		System.out.println();
 		
+		System.out.println("---- Seller delete ----");
+		sellerDAO.deleteById(16);
+		System.out.println("Exclusão realizada.");
+		System.out.println();
 		
 	}
 
