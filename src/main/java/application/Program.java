@@ -22,6 +22,11 @@ public class Program {
 		Department dep = new Department(2, null);
 		List<Seller> sellers = sellerDAO.findByDepartment(dep);
 		sellers.stream().forEach(System.out::println);
+		System.out.println();
+		
+		System.out.println("---- Seller findAll ----");
+		sellers = sellerDAO.findAll();
+		sellers.stream().forEach(System.out::println);
 	}
 
 }
